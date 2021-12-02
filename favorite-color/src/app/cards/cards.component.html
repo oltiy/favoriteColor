@@ -1,0 +1,12 @@
+<mat-card
+  (click)="vote()"
+  class="card"
+  [ngStyle]="{ 'background-color': colorItem.color }"
+  class="container-card"
+>
+  <mat-card-content
+    [ngStyle]="{ width: relativeToMax * 2 + 'px' }"
+    class="totalVotes"
+    >{{ colorItem.totalVotes }}</mat-card-content
+  >
+</mat-card>
